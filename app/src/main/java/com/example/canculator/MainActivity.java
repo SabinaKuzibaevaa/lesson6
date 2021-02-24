@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button zero, one, two, three, four, five, six, seven, eight, nine;
     Button jaksha, prosent, kobeitu, bolu, alu, kosu, equal;
+    Button delete_all, PlusMinus;
     TextView number;
 
     @Override
@@ -36,9 +37,100 @@ public class MainActivity extends AppCompatActivity {
         alu = findViewById(R.id.alu);
         kosu = findViewById(R.id.kosu);
 
+        delete_all = findViewById(R.id.delete_all);
+
         equal = findViewById(R.id.equal);
          
         number = findViewById(R.id.number);
+
+        View.OnClickListener btnSandar = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String aldyngySan = number.getText().toString();
+                String basylganSan = "";
+                String songyResult = "";
+
+
+                switch (view.getId()){
+                    case R.id.zero:
+                        basylganSan = "0";
+                        break;
+                    case R.id.one:
+                        basylganSan = "1";
+                        break;
+                    case R.id.two:
+                        basylganSan = "2";
+                        break;
+                    case R.id.three:
+                        basylganSan = "3";
+                        break;
+
+                    case R.id.four:
+                        basylganSan = "4";
+                        break;
+
+                    case R.id.five:
+                        basylganSan = "5";
+                        break;
+
+                    case R.id.six:
+                        basylganSan = "6";
+                        break;
+
+                    case R.id.seven:
+                        basylganSan = "7";
+                        break;
+
+                    case R.id.eight:
+                        basylganSan = "8";
+                        break;
+
+                    case R.id.nine:
+                        basylganSan = "9";
+                        break;
+                }
+                if(!aldyngySan.equals("0")) songyResult = aldyngySan + basylganSan;
+                else songyResult = basylganSan;
+                number.setText(songyResult);
+            }
+        };
+        
+        zero.setOnClickListener(btnSandar);
+        one .setOnClickListener(btnSandar);
+        two .setOnClickListener(btnSandar);
+        three.setOnClickListener(btnSandar);
+        four.setOnClickListener(btnSandar);
+        five.setOnClickListener(btnSandar);
+        six .setOnClickListener(btnSandar);
+        seven.setOnClickListener(btnSandar);
+        eight.setOnClickListener(btnSandar);
+        nine.setOnClickListener(btnSandar);
+
+        View.OnClickListener btnDelete = new View.OnClickListener() {
+            @Override
+            public void onClick(View view){
+                switch (view.getId()){
+                    case R.id.delete_all:
+                        number.setText("0");
+                        break;
+                    case R.id.PlusMinus:
+
+                        String sanText = number.getText().toString();
+                        int san = Integer.parseInt(sanText);
+
+                        if (san > 0)number.setText("-"+sanText);
+                        else {
+                            san = san *(-1);
+                            number.setText(""+san);
+                        }
+
+                        break;
+                }
+            }
+        };
+        PlusMinus.setOnClickListener(btnDelete);
+        delete_all.setOnClickListener(btnDelete);
 
         zero.setOnClickListener(new View.OnClickListener() {
             @Override

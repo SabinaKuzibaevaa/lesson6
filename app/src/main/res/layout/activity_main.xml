@@ -139,7 +139,7 @@
         android:layout_weight="1">
 
         <Button
-            android:id="@+id/minus"
+            android:id="@+id/PlusMinus"
             style="@style/button_numbers"
             android:text="+/-"/>
 
