@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="40dp"
+        android:textSize="30dp"
         android:gravity="right"
         android:paddingRight="10dp"/>
 
@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
-        android:textSize="50dp"
+        android:textSize="30dp"
         android:gravity="right"
         android:paddingRight="10dp"/>
 
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="10dp"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:background="@drawable/button_back"
             app:backgroundTint="@null"
             android:textColor="@color/red"
@@ -46,17 +46,17 @@
 
         <Button
             android:id="@+id/jaksha"
-            style="@style/button_symbols"
+            style="@style/button_symbols_land"
             android:text="()"/>
 
         <Button
             android:id="@+id/prosent"
-            style="@style/button_symbols"
+            style="@style/button_symbols_land"
             android:text="%" />
 
         <Button
             android:id="@+id/bolu"
-            style="@style/button_symbols"
+            style="@style/button_symbols_land"
             android:text="/"/>
 
     </LinearLayout>
@@ -68,22 +68,22 @@
 
         <Button
             android:id="@+id/seven"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="7"/>
 
         <Button
             android:id="@+id/eight"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="8"/>
 
         <Button
             android:id="@+id/nine"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="9"/>
 
         <Button
             android:id="@+id/kobeitu"
-            style="@style/button_symbols"
+            style="@style/button_symbols_land"
             android:text="*"/>
 
     </LinearLayout>
@@ -95,22 +95,22 @@
 
         <Button
             android:id="@+id/four"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="4"/>
 
         <Button
             android:id="@+id/five"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="5"/>
 
         <Button
             android:id="@+id/six"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="6"/>
 
         <Button
             android:id="@+id/alu"
-            style="@style/button_symbols"
+            style="@style/button_symbols_land"
             android:text="-"/>
 
     </LinearLayout>
@@ -122,22 +122,22 @@
 
         <Button
             android:id="@+id/one"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="1"/>
 
         <Button
             android:id="@+id/two"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="2"/>
 
         <Button
             android:id="@+id/three"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="3"/>
 
         <Button
             android:id="@+id/kosu"
-            style="@style/button_symbols"
+            style="@style/button_symbols_land"
             android:text="+"/>
 
     </LinearLayout>
@@ -149,22 +149,22 @@
 
         <Button
             android:id="@+id/PlusMinus"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="+/-"/>
 
         <Button
             android:id="@+id/zero"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="0"/>
 
         <Button
             android:id="@+id/dote"
-            style="@style/button_numbers"
+            style="@style/button_numbers_land"
             android:text="."/>
 
         <Button
             android:id="@+id/equal"
-            style="@style/button_equal"
+            style="@style/button_equal_land"
             android:text="="/>
 
     </LinearLayout>

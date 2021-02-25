@@ -25,6 +25,10 @@
         <item name="android:textColor">@color/green</item>
     </style>
 
+    <style name="button_symbols_land" parent="button_symbols">
+        <item name="android:textSize">20sp</item>
+    </style>
+
     <style name="button_numbers">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -36,6 +40,10 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    <style name="button_numbers_land" parent="button_numbers" >
+        <item name="android:textSize">20sp</item>
+    </style>
+
     <style name="button_equal">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -45,6 +53,10 @@
         <item name="android:background">@drawable/button_equal</item>
         <item name="backgroundTint">@null</item>
         <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="button_equal_land" parent="button_equal">
+        <item name="android:textSize">20sp</item>
     </style>
 
 </resources>
